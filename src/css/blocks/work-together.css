@@ -1,6 +1,12 @@
 /* .section-work-together {
-  margin: 0 auto;
+  position: relative; 
 } */
+@media (min-width: 768px) {
+  .section-work-together {
+    position: relative; /* Устанавливаем секцию как контекст для абсолютного позиционирования */
+    margin-top: 124px;
+  }
+}
 .title-work-together {
   margin-top: 80px;
   margin-bottom: 40px;
@@ -237,5 +243,42 @@
 @media (min-width: 768px) {
   .button-form-work-together {
     width: 173px;
+  }
+}
+.back-image-work-together {
+  display: none;
+}
+@media (min-width: 768px) {
+  .back-image-work-together {
+    background-image: url('/../img/benefits-img/back-image-work-together@1x.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    width: 336px;
+    height: 260px;
+    z-index: -1;
+
+    top: -115px;
+    right: 31px;
+  }
+}
+@media (min-width: 1280px) {
+  .back-image-work-together {
+    width: 526px;
+    height: 408px;
+
+    top: -115px;
+    right: 31px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .back-image-work-together {
+      background-image: url('/../img/benefits-img/back-image-work-together@2x.png');
+    }
   }
 }
