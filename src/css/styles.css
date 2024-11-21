@@ -1,4 +1,5 @@
 /* Common styles */
+@import url('../public/font/font.css');
 @import url('./base.css');
 @import url('./container.css');
 @import url('./root.css');
@@ -14,5 +15,8 @@
 @import url('./blocks/reviews.css');
 @import url('./blocks/work-together.css');
 @import url('./blocks/footer.css');
+
+@import url('./blocks/modal-window.css');
+@import url('./blocks/mob-menu.css');
 
 @import url('./blocks/checkbox-mod.css');

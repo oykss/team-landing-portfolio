@@ -385,7 +385,7 @@ input[type='email']:valid + .error-message + .icon-checkmark-work-together {
   right: 16px;
   border-style: none;
   padding: 0;
-  /* background-color: transparent; */
+  background-color: transparent;
   border: none;
 }
 @media (min-width: 768px) {
@@ -397,7 +397,7 @@ input[type='email']:valid + .error-message + .icon-checkmark-work-together {
 .icon-popup-work-together {
   /* position: absolute; */
 
-  stroke: var(--color-text-primary);
+  /* stroke: var(--color-text-primary); */
 }
 @media (min-width: 768px) {
   .icon-popup-work-together {
