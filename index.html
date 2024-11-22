@@ -20,7 +20,8 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/team-landing-portfolio/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/team-landing-portfolio/assets/index-DDqS4VW8.css">
+    <link rel="modulepreload" crossorigin href="/team-landing-portfolio/assets/vendor-CNNbG8jS.js">
+    <link rel="stylesheet" crossorigin href="/team-landing-portfolio/assets/index-DlZHtqes.css">
   </head>
   <body>
     <header id="header">
@@ -199,7 +200,82 @@
 </section>
 
       <section id="work-together">
-  <!-- Work Together section -->
+  <div class="container">
+    <div class="cont-wrap">
+      <h2 class="title">let’s <span>work together</span></h2>
+      <p class="desc">
+        Contact me to transform your ideas into exceptional solutions.
+      </p>
+
+      <ul class="cont-list">
+        <li class="item">
+          <svg class="icon" width="24" height="24">
+            <use href="/team-landing-portfolio/assets/icon-XL6tm0IA.svg#icon-tel"></use>
+          </svg>
+          <a class="link" href="tel:+380904567890" aria-label="Phone">
+            +38 090 456 78 90
+          </a>
+        </li>
+        <li class="item">
+          <svg class="icon" width="24" height="24">
+            <use href="/team-landing-portfolio/assets/icon-XL6tm0IA.svg#icon-email"></use>
+          </svg>
+          <a
+            class="link"
+            href="mailto:lloydjefferson@gmail.com"
+            aria-label="Email"
+          >
+            lloydjefferson@gmail.com
+          </a>
+        </li>
+        <li class="item">
+          <svg class="icon" width="24" height="24">
+            <use href="/team-landing-portfolio/assets/icon-XL6tm0IA.svg#icon-loc"></use>
+          </svg>
+          <a
+            class="link"
+            href="https://maps.app.goo.gl/Ct7PuVPrGhJZiskX6"
+            aria-label="Address"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            USA, New York
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <form id="cont-form" class="cont-form">
+      <label for="user-email" class="email-label">
+        <input
+          type="email"
+          name="user-email"
+          id="user-email"
+          placeholder="Your email*"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          aria-label="Enter your email"
+          required
+        />
+        <span class="error-message">Invalid email, try again</span>
+        <svg class="icon-checkmark" width="16" height="16">
+          <use href="/team-landing-portfolio/assets/icon-XL6tm0IA.svg#icon-checkmark"></use>
+        </svg>
+      </label>
+
+      <textarea
+        name="user-message"
+        id="user-message"
+        cols="30"
+        rows="5"
+        placeholder="Message"
+        aria-label="Text me a message"
+      ></textarea>
+
+      <button type="submit" id="form-submit" aria-label="Submit">
+        SEND MESSAGE
+      </button>
+    </form>
+  </div>
 </section>
 
     </main>
