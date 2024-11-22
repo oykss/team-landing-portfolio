@@ -4,7 +4,7 @@
 @media (min-width: 768px) {
   .section-work-together {
     position: relative; /* Устанавливаем секцию как контекст для абсолютного позиционирования */
-    margin-top: 124px;
+    /* margin-top: 124px; */
   }
 }
 .title-work-together {
@@ -12,6 +12,7 @@
   margin-bottom: 40px;
   width: 253px;
   height: 128px;
+  color: var(--color-text-primary);
 }
 @media (min-width: 768px) {
   .title-work-together {
@@ -41,7 +42,7 @@
   line-height: 1.55556;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--color-text-primary);
 }
 @media (min-width: 768px) {
   .text-work-together {
@@ -110,7 +111,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: var(--color-text-primary);
 }
 .addres-link-work-together:hover,
 .addres-link-work-together:focus {
@@ -123,7 +124,7 @@
 }
 .icon-work-together {
   stroke-width: 1px;
-  stroke: #00b068;
+  stroke: var(--color-text-secondary);
   fill: none;
 }
 .form-work-together {
@@ -150,7 +151,7 @@
   }
 }
 @media screen and (min-width: 1280px) {
-  .ass {
+  .container-contacts_and_form {
     display: flex;
     /* align-items: flex-start;
         justify-content: flex-start; */
@@ -163,11 +164,14 @@
   }
 }
 .label-form-work-together {
+  position: relative;
 }
 .input-form-work-together {
   border: none;
   border-radius: 8px;
-  background: #e4e5e6;
+  background-color: var(--background-1);
+  color: var(--color-text-primary);
+
   padding: 16px;
   width: 320px;
   height: 48px;
@@ -175,9 +179,45 @@
 }
 .input-form-work-together:hover,
 .input-form-work-together:focus {
-  border: 2px solid #00b068;
-  outline: none; /* Убираем контур по умолчанию */
+  /* border: 1px solid #00b068;
+  outline: none; */
 }
+/* Стили для отображения сообщения об ошибке */
+.error-message {
+  display: none; /* Скрываем по умолчанию */
+  position: absolute;
+  top: 52px;
+  /* margin-top: 4px; */
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #e74a3b;
+}
+/* Показываем ошибку, когда инпут невалиден */
+input[type='email']:invalid:not(:placeholder-shown) + .error-message {
+  display: block; /* Показываем сообщение об ошибке */
+}
+input[type='email']:invalid:not(:placeholder-shown) {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #e74a3b;
+}
+.icon-checkmark-work-together {
+  display: none; /* Скрываем по умолчанию */
+  fill: #00b068;
+  /* margin-left: 5px; */
+  position: absolute;
+  right: 20px;
+  top: 16px;
+}
+/* Показываем иконку, когда инпут валиден */
+input[type='email']:valid + .error-message + .icon-checkmark-work-together {
+  display: block; /* Показываем иконку, когда инпут валиден */
+}
+
 @media (min-width: 768px) {
   .input-form-work-together {
     width: 704px;
@@ -186,14 +226,13 @@
 @media (min-width: 1280px) {
   .input-form-work-together {
     width: 592px;
-    /* margin: 0; */
-    /* margin-left: auto; */
   }
 }
 .textarea-form-work-together {
   border: none;
   border-radius: 8px;
-  background: #e4e5e6;
+  background-color: var(--background-1);
+  color: var(--color-text-primary);
 
   padding: 16px;
   width: 320px;
@@ -205,8 +244,8 @@
 }
 .textarea-form-work-together:hover,
 .textarea-form-work-together:focus {
-  border: 2px solid #00b068;
-  outline: none; /* Убираем контур по умолчанию */
+  /* border: 1px solid #00b068;
+  outline: none;  */
 }
 @media (min-width: 768px) {
   .textarea-form-work-together {
@@ -243,6 +282,7 @@
 @media (min-width: 768px) {
   .button-form-work-together {
     width: 173px;
+    padding: 0;
   }
 }
 .back-image-work-together {
@@ -250,7 +290,7 @@
 }
 @media (min-width: 768px) {
   .back-image-work-together {
-    background-image: url('/../img/benefits-img/back-image-work-together@1x.png');
+    background-image: url('/../img/benefits-img/tab-back-image-work-together@1x.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -266,6 +306,7 @@
 }
 @media (min-width: 1280px) {
   .back-image-work-together {
+    background-image: url('/../img/benefits-img/laptop-back-image-work-together@1x.png');
     width: 526px;
     height: 408px;
 
@@ -278,7 +319,7 @@
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
     .back-image-work-together {
-      background-image: url('/../img/benefits-img/back-image-work-together@2x.png');
+      background-image: url('/../img/benefits-img/laptop-back-image-work-together@2x.png');
     }
   }
 }

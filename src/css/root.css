@@ -1,9 +1,13 @@
+/* transition: all 250ms ease-in-out; */
 .theme-light {
   --color-text-primary: #292929;
   --color-text-secondary: #00b068;
 
   --background-0: #f0f0f0;
   --background-1: #e4e5e6;
+  --background-2: #bcdfd1;
+  --background-3: #00b068;
+  --background-4: #bcdfd1;
 }
 .theme-dark {
   --color-text-primary: #f0f0f0;
@@ -11,6 +15,9 @@
 
   --background-0: #1e2023;
   --background-1: #2a2d32;
+  --background-2: #14c57c;
+  --background-3: #009156;
+  --background-4: #204136;
 }
 
 :root {
