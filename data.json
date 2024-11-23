@@ -1,0 +1,74 @@
+{
+  "projects": [
+    {
+      "name": "Wallet webservice",
+      "image": {
+        "1x": "/projects/1_wallet-webservice-@1x.jpg",
+        "2x": "/projects/1_wallet-webservice-@2x.jpg"
+      }
+    },
+    {
+      "name": "Green harvest webservice",
+      "image": {
+        "1x": "/projects/2_green-harvest-online-store-@1x.jpg",
+        "2x": "/projects/2_green-harvest-online-store-@2x.jpg"
+      }
+    },
+    {
+      "name": "English Excellence website",
+      "image": {
+        "1x": "/projects/3_english-excellence-webservice-@1x.jpg",
+        "2x": "/projects/3_english-excellence-webservice-@2x.jpg"
+      }
+    },
+    {
+      "name": "Vyshyvanka Landing Page",
+      "image": {
+        "1x": "/projects/4_vyshyvanka-vibes-landing-page-@1x.jpg",
+        "2x": "/projects/4_vyshyvanka-vibes-landing-page-@2x.jpg"
+      }
+    },
+    {
+      "name": "Chego jewelry website",
+      "image": {
+        "1x": "/projects/5_chego-jewelry-website-@1x.jpg",
+        "2x": "/projects/5_chego-jewelry-website-@2x.jpg"
+      }
+    },
+    {
+      "name": "Energy flow webservice",
+      "image": {
+        "1x": "/projects/6_energy-flow-webservice-@1x.jpg",
+        "2x": "/projects/6_energy-flow-webservice-@2x.jpg"
+      }
+    },
+    {
+      "name": "Fruitbox online store",
+      "image": {
+        "1x": "/projects/7_fruitbox-online-store-@1x.jpg",
+        "2x": "/projects/7_fruitbox-online-store-@2x.jpg"
+      }
+    },
+    {
+      "name": "Mimino website",
+      "image": {
+        "1x": "/projects/8_mimino-website-@1x.jpg",
+        "2x": "/projects/8_mimino-website-@2x.jpg"
+      }
+    },
+    {
+      "name": "Power pulse webservice",
+      "image": {
+        "1x": "/projects/9_power-pulse-webservice-@1x.jpg",
+        "2x": "/projects/9_power-pulse-webservice-@2x.jpg"
+      }
+    },
+    {
+      "name": "Starlight studio landing",
+      "image": {
+        "1x": "/projects/10_starlight-studio-landing-page-@1x.jpg",
+        "2x": "/projects/10_starlight-studio-landing-page-@2x.jpg"
+      }
+    }
+  ]
+}
