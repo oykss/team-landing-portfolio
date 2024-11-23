@@ -22,7 +22,7 @@
     <script type="module" crossorigin src="/team-landing-portfolio/index.js"></script>
     <link rel="modulepreload" crossorigin href="/team-landing-portfolio/assets/vendor-ClQ9ArOj.js">
     <link rel="stylesheet" crossorigin href="/team-landing-portfolio/assets/vendor-CzG10Eoq.css">
-    <link rel="stylesheet" crossorigin href="/team-landing-portfolio/assets/index-C21U7CfH.css">
+    <link rel="stylesheet" crossorigin href="/team-landing-portfolio/assets/index-Dkw1Nems.css">
   </head>
   <body>
     <header id="header">
@@ -795,12 +795,11 @@
       </ul>
     </div>
 
-    <form id="cont-form" class="cont-form form-work-together">
-      <label for="user-email" class="email-label label-form-work-together">
+    <form id="cont-form">
+      <label for="user-email" class="email-label">
         <input
           type="email"
           name="user-email"
-          class="input-form-work-together"
           id="user-email"
           placeholder="Your email*"
           pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
@@ -808,18 +807,13 @@
           required
         />
         <span class="error-message">Invalid email, try again</span>
-        <svg
-          class="icon-checkmark icon-checkmark-work-together"
-          width="16"
-          height="16"
-        >
+        <svg class="icon-checkmark" width="16" height="16">
           <use href="/team-landing-portfolio/assets/icon-Cds137Wy.svg#icon-checkmark"></use>
         </svg>
       </label>
 
       <textarea
         name="user-message"
-        class="textarea-form-work-together"
         id="user-message"
         cols="30"
         rows="5"
@@ -827,12 +821,7 @@
         aria-label="Text me a message"
       ></textarea>
 
-      <button
-        type="submit"
-        id="form-submit"
-        class="button-form-work-together openModal"
-        aria-label="Submit"
-      >
+      <button type="submit" id="form-submit" aria-label="Submit">
         SEND MESSAGE
       </button>
     </form>
@@ -895,20 +884,16 @@
 </footer>
 
 
-    <div class="overlay-form"></div>
-<div class="modal-form" id="modal">
-  <h3 class="title-modal-form-work-together">
-    Thank you for your interest in cooperation!
-  </h3>
-  <p class="text-modal-form-work-together">
-    The manager will contact you shortly to discuss further details and
-    opportunities for cooperation. Please stay in touch.
-  </p>
-  <button type="button" class="close-btn-work-together closeModal">
-    <svg class="icon-modal-work-together" height="24" width="24">
-      <use href="/team-landing-portfolio/assets/icon-Cds137Wy.svg#icon-close"></use>
-    </svg>
-  </button>
+    <div class="overlay-form" id="modal" data-close-modal>
+  <div class="modal-form">
+    <h3 class="title-modal"></h3>
+    <p class="desc"></p>
+    <button type="button" class="btn-close" data-close-modal>
+      <svg class="icon" height="24" width="24">
+        <use href="/team-landing-portfolio/assets/icon-Cds137Wy.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
 </div>
 
     <div class="mob-menu">
