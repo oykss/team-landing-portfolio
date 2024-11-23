@@ -29,19 +29,20 @@
 .mob-header {
   margin: 0 auto;
   max-width: 360px;
-  padding: 0 20px;
+  padding: 0 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .mob-logo {
-  padding: 20px 0;
+  font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
+  font-weight: 400;
   font-size: 24px;
-  line-height: 100%;
-  letter-spacing: 0.06em;
+  line-height: 1;
+  letter-spacing: .06em;
   text-transform: uppercase;
-  font-family: 'Impact';
+  color: var(--c-lt-text-main);
 }
 
 .mob-logo-span {
@@ -80,11 +81,19 @@
 }
 
 .mob-nav-list {
-  margin: auto 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  margin: 0 auto;
   height: 100vh;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
   gap: 24px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  background-size: auto;
+  background-image: url(/infinity-team/assets/header-stars-mob-up-C9KkMsZS.png), url(/infinity-team/assets/header-stars-mob-down-NI0riERj.png);
+  background-position: top 90px left 10px, bottom 120px left 120px;
+  background-position-x: left 10px, left 120px;
+  background-position-y: top 90px, bottom 120px;
+  background-repeat: no-repeat, no-repeat;
 }
