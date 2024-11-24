@@ -10,6 +10,7 @@
   padding: 12px;
   cursor: pointer;
   display: none;
+  z-index: 1000;
 }
 .scroll-to-top .btn-grey-icon {
   transform: rotate(-45deg);
