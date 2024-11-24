@@ -5,6 +5,7 @@ generationContentList(0, 2);
 
 let count = 3;
 const btnLoadMore = document.querySelector('.load-more');
+const projectList = document.querySelector('.project-list');
 btnLoadMore.addEventListener('click', addProjects);
 
 function addProjects() {
@@ -18,4 +19,9 @@ function addProjects() {
     generationContentList(count, temp);
     count = temp + 1;
   }
+  const rectToShow = projectList.lastElementChild.getBoundingClientRect();
+  window.scrollBy({
+    top: rectToShow.height * 3,
+    behavior: 'smooth',
+  });
 }
