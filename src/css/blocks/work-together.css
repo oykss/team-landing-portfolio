@@ -102,7 +102,6 @@
   text-align: center;
   color: #f0f0f0;
   transition: all 250ms ease-in-out;
-  cursor: pointer;
 }
 
 #form-submit:is(:hover, :focus) {
@@ -112,6 +111,7 @@
 .error-message {
   position: absolute;
   top: 38px;
+  left: 0;
   opacity: 0;
   font-weight: 300;
   font-size: 12px;
@@ -139,6 +139,10 @@
 }
 
 @media (min-width: 768px) {
+  #work-together .container {
+    position: relative;
+  }
+
   #work-together .title {
     margin-bottom: 60px;
   }
@@ -163,24 +167,16 @@
     top: 4px;
     left: 672px;
   }
-}
-
-@media screen and (min-width: 1280px) {
-  #work-together .container {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-  }
 
   #work-together .container::before {
     content: '';
     position: absolute;
-    right: 35px;
-    top: -110px;
-    width: 526px;
-    height: 408px;
+    right: 29px;
+    top: -115px;
+    width: 336px;
+    height: 260px;
     display: inline-block;
-    background-image: url('../../img/work-together/work-together-decor@1x.png');
+    background-image: url('../../img/work-together/work-together-decor-tab-@1x.png');
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -189,6 +185,30 @@
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
     #work-together .container::before {
+      background-image: url('../../img/work-together/work-together-decor-tab-@2x.png');
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #work-together .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  #work-together .container::before {
+    right: 35px;
+    top: -110px;
+    width: 526px;
+    height: 408px;
+    background-image: url('../../img/work-together/work-together-decor@1x.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .benefits-image {
       background-image: url('../../img/work-together/work-together-decor@2x.png');
     }
   }
@@ -217,7 +237,6 @@
 
   #cont-form {
     width: 592px;
-    margin-top: 328px;
   }
 
   #cont-form .icon-checkmark {
