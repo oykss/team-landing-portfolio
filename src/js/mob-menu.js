@@ -28,3 +28,9 @@ function closeMenu() {
     e.removeEventListener('click', closeMenu);
   });
 }
+
+window
+  .matchMedia('(min-width: 768px)')
+  .addEventListener('change', ({ matches }) => {
+    if (matches) closeMenu();
+  });

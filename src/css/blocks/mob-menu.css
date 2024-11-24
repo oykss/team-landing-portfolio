@@ -64,10 +64,15 @@
 }
 
 .mob-menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   background-image: url(../../img/hero/hero-background-mobile.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  height: 100vh;
   padding: 16px 20px;
 }
 
@@ -80,11 +85,11 @@
 }
 
 .mob-nav-list {
-  margin: auto 0;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
-  height: 100vh;
   gap: 24px;
+}
+
+.changes-menu {
 }
