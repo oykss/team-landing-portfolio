@@ -1,20 +1,18 @@
-import{A as P,S as $,N as I,K as A,a as E}from"./assets/vendor-wfFWe0yy.js";(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))n(s);new MutationObserver(s=>{for(const r of s)if(r.type==="childList")for(const c of r.addedNodes)c.tagName==="LINK"&&c.rel==="modulepreload"&&n(c)}).observe(document,{childList:!0,subtree:!0});function o(s){const r={};return s.integrity&&(r.integrity=s.integrity),s.referrerPolicy&&(r.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?r.credentials="include":s.crossOrigin==="anonymous"?r.credentials="omit":r.credentials="same-origin",r}function n(s){if(s.ep)return;s.ep=!0;const r=o(s);fetch(s.href,r)}})();const B=e=>new IntersectionObserver((t,o)=>{t.forEach(n=>{n.isIntersecting&&(e(),o.unobserve(n.target))})},{rootMargin:"0px 0px 800px 0px",threshold:0}),T=[{name:"Wallet webservice",image:{"1x":"/projects/1_wallet-webservice-@1x.jpg","2x":"/projects/1_wallet-webservice-@2x.jpg"}},{name:"Green harvest webservice",image:{"1x":"/projects/2_green-harvest-online-store-@1x.jpg","2x":"/projects/2_green-harvest-online-store-@2x.jpg"}},{name:"English Excellence website",image:{"1x":"/projects/3_english-excellence-webservice-@1x.jpg","2x":"/projects/3_english-excellence-webservice-@2x.jpg"}},{name:"Vyshyvanka Landing Page",image:{"1x":"/projects/4_vyshyvanka-vibes-landing-page-@1x.jpg","2x":"/projects/4_vyshyvanka-vibes-landing-page-@2x.jpg"}},{name:"Chego jewelry website",image:{"1x":"/projects/5_chego-jewelry-website-@1x.jpg","2x":"/projects/5_chego-jewelry-website-@2x.jpg"}},{name:"Energy flow webservice",image:{"1x":"/projects/6_energy-flow-webservice-@1x.jpg","2x":"/projects/6_energy-flow-webservice-@2x.jpg"}},{name:"Fruitbox online store",image:{"1x":"/projects/7_fruitbox-online-store-@1x.jpg","2x":"/projects/7_fruitbox-online-store-@2x.jpg"}},{name:"Mimino website",image:{"1x":"/projects/8_mimino-website-@1x.jpg","2x":"/projects/8_mimino-website-@2x.jpg"}},{name:"Power pulse webservice",image:{"1x":"/projects/9_power-pulse-webservice-@1x.jpg","2x":"/projects/9_power-pulse-webservice-@2x.jpg"}},{name:"Starlight studio landing",image:{"1x":"/projects/10_starlight-studio-landing-page-@1x.jpg","2x":"/projects/10_starlight-studio-landing-page-@2x.jpg"}}],h={projects:T},l="/team-landing-portfolio/",C=document.querySelector(".project-list");function v(e,t){for(let o=e;o<=t;o++){const{image:{"1x":n,"2x":s},name:r}=h.projects[o];C.innerHTML+=`
+import{A as P,S as $,N as I,K as A,a as E}from"./assets/vendor-wfFWe0yy.js";(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))n(s);new MutationObserver(s=>{for(const r of s)if(r.type==="childList")for(const c of r.addedNodes)c.tagName==="LINK"&&c.rel==="modulepreload"&&n(c)}).observe(document,{childList:!0,subtree:!0});function o(s){const r={};return s.integrity&&(r.integrity=s.integrity),s.referrerPolicy&&(r.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?r.credentials="include":s.crossOrigin==="anonymous"?r.credentials="omit":r.credentials="same-origin",r}function n(s){if(s.ep)return;s.ep=!0;const r=o(s);fetch(s.href,r)}})();const B=e=>new IntersectionObserver((t,o)=>{t.forEach(n=>{n.isIntersecting&&(e(),o.unobserve(n.target))})},{rootMargin:"0px 0px 800px 0px",threshold:0}),T=[{name:"Wallet webservice",image:{"1x":"/projects/1_wallet-webservice-@1x.jpg","2x":"/projects/1_wallet-webservice-@2x.jpg"}},{name:"Green harvest webservice",image:{"1x":"/projects/2_green-harvest-online-store-@1x.jpg","2x":"/projects/2_green-harvest-online-store-@2x.jpg"}},{name:"English Excellence website",image:{"1x":"/projects/3_english-excellence-webservice-@1x.jpg","2x":"/projects/3_english-excellence-webservice-@2x.jpg"}},{name:"Vyshyvanka Landing Page",image:{"1x":"/projects/4_vyshyvanka-vibes-landing-page-@1x.jpg","2x":"/projects/4_vyshyvanka-vibes-landing-page-@2x.jpg"}},{name:"Chego jewelry website",image:{"1x":"/projects/5_chego-jewelry-website-@1x.jpg","2x":"/projects/5_chego-jewelry-website-@2x.jpg"}},{name:"Energy flow webservice",image:{"1x":"/projects/6_energy-flow-webservice-@1x.jpg","2x":"/projects/6_energy-flow-webservice-@2x.jpg"}},{name:"Fruitbox online store",image:{"1x":"/projects/7_fruitbox-online-store-@1x.jpg","2x":"/projects/7_fruitbox-online-store-@2x.jpg"}},{name:"Mimino website",image:{"1x":"/projects/8_mimino-website-@1x.jpg","2x":"/projects/8_mimino-website-@2x.jpg"}},{name:"Power pulse webservice",image:{"1x":"/projects/9_power-pulse-webservice-@1x.jpg","2x":"/projects/9_power-pulse-webservice-@2x.jpg"}},{name:"Starlight studio landing",image:{"1x":"/projects/10_starlight-studio-landing-page-@1x.jpg","2x":"/projects/10_starlight-studio-landing-page-@2x.jpg"}}],h={projects:T},l="/team-landing-portfolio/",C=document.querySelector(".project-list");function y(e,t){for(let o=e;o<=t;o++){const{image:{"1x":n,"2x":s},name:r}=h.projects[o];C.innerHTML+=`
       <li class="item">
-        <div class="item-img">
-          <picture>
-            <source
-              srcset="
-                ${l+n} 1x,
-                 ${l+s} 2x
-              "
-            />
-            <img
-              src="${l+n}"
-              width="320"
-              alt="${r}"
-            />
-          </picture>
-        </div>
+        <picture>
+          <source
+            srcset="
+              ${l+n} 1x,
+              ${l+s} 2x
+            "
+          />
+          <img
+            src="${l+n}"
+            width="320"
+            alt="${r}"
+          />
+        </picture>
         <p class="item-subtext">React, JavaScript, Node JS, Git</p>
         <div class="container-txt-btn">
           <p class="item-text">${r}</p>
@@ -25,7 +23,7 @@ import{A as P,S as $,N as I,K as A,a as E}from"./assets/vendor-wfFWe0yy.js";(fun
             </svg>
           </a>
         </div>
-      </li>`}}v(0,2);let d=3;const y=document.querySelector(".load-more");y.addEventListener("click",k);function k(){let e=d+2;e>=h.projects.length-1?(y.style.display="none",y.removeEventListener("click",k),v(d,h.projects.length-1)):(v(d,e),d=e+1)}document.addEventListener("DOMContentLoaded",()=>{new P("#ac-list",{closeOther:!0}).open(0)});const _=document.querySelector(".swiper-wrapper"),f=document.querySelector(".error-text"),a=document.querySelector(".swiper-button-prev"),i=document.querySelector(".swiper-button-next"),S=document.querySelector(".slider-icon"),N=async()=>{try{const e=await E.get("https://portfolio-js.b.goit.study/api/reviews");return f.style.display="none",e.data}catch(e){f.style.display="block",a.style.display="none",i.style.display="none",console.log(e)}},V=e=>e.map(t=>`
+      </li>`}}y(0,2);let d=3;const v=document.querySelector(".load-more");v.addEventListener("click",k);function k(){let e=d+2;e>=h.projects.length-1?(v.style.display="none",v.removeEventListener("click",k),y(d,h.projects.length-1)):(y(d,e),d=e+1)}document.addEventListener("DOMContentLoaded",()=>{new P("#ac-list",{closeOther:!0}).open(0)});const _=document.querySelector(".swiper-wrapper"),f=document.querySelector(".error-text"),a=document.querySelector(".swiper-button-prev"),i=document.querySelector(".swiper-button-next"),S=document.querySelector(".slider-icon"),N=async()=>{try{const e=await E.get("https://portfolio-js.b.goit.study/api/reviews");return f.style.display="none",e.data}catch(e){f.style.display="block",a.style.display="none",i.style.display="none",console.log(e)}},V=e=>e.map(t=>`
         <div class='swiper-slide'>
         <li class='review-card'>
             <p class='review-text'>${t.review}</p>
