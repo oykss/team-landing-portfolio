@@ -20,9 +20,9 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" crossorigin src="/team-landing-portfolio/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/team-landing-portfolio/assets/vendor-wfFWe0yy.js">
-    <link rel="stylesheet" crossorigin href="/team-landing-portfolio/assets/vendor-CzG10Eoq.css">
-    <link rel="stylesheet" crossorigin href="/team-landing-portfolio/assets/index-BrOtfYDa.css">
+    <link rel="modulepreload" crossorigin href="/team-landing-portfolio/assets/vendor-lFORrMxe.js">
+    <link rel="stylesheet" crossorigin href="/team-landing-portfolio/assets/vendor-DLkfUfUw.css">
+    <link rel="stylesheet" crossorigin href="/team-landing-portfolio/assets/index-B5m5po-s.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -47,9 +47,11 @@
         <div class="layer-changes-mod"></div>
       </div>
       <nav>
-        <a href="#about-me" class="link">About me</a>
-        <a href="#projects" class="link">Projects</a>
-        <a href="#work-together" class="link">Contacts</a>
+        <ul class="nav-list">
+          <li><a href="#about-me" class="link">About me</a></li>
+          <li><a href="#projects" class="link">Projects</a></li>
+          <li><a href="#work-together" class="link">Contacts</a></li>
+        </ul>
       </nav>
     </div>
   </div>
@@ -549,6 +551,7 @@
         rows="5"
         placeholder="Message"
         aria-label="Text me a message"
+        required
       ></textarea>
 
       <button type="submit" id="form-submit" aria-label="Submit">
@@ -614,7 +617,7 @@
 </footer>
 
 
-    <div class="overlay-form" id="modal" data-close-modal>
+    <div class="overlay-form" id="modal">
   <div class="modal-form">
     <p class="title-modal"></p>
     <p class="desc"></p>
